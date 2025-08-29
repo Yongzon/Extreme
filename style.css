@@ -1,45 +1,60 @@
-*{margin:0; padding:0; box-sizing:border-box; font-family:sans-serif; } 
-.header{position:absolute; top:0; left:0; width:100%; padding:20px 10%; background:transparent; justify-content:space-around; align-items:center; display:flex; } 
-.logo{width:125px; height:75px; } 
-.navbar a{font-size:15px; text-decoration:none; font-weight:500; color:rgb(0,0,0); margin-left:35px; } 
-.navbar .hm{font-weight:bold; } 
-.navbar .btn{margin-left:25px; width:200px; height:50px; background:transparent; border-radius:50px; font-size:18px; border:solid 1px; } 
-.home{background:url(images/main.webp) no-repeat; background-position:0% 20%; background-size:cover; display:flex; align-items:center; justify-content:center; height:700px; } 
-.home-content{justify-items:center; flex-direction:column; } 
-.adventure{font-size:30px; font-family:'Times New Roman',Times,serif; font-weight:100; font-style:italic; color:white; margin-bottom:25px; } 
-.line{font-size:60px; color:white; margin-bottom:35px; } 
-.home-btn{display:flex; width:200px; height:50px; background:white; border-radius:50px; font-size:16px; font-weight:bold; font-family:Arial,Helvetica,sans-serif; color:black; border:none; } 
-.content1{display:flex; justify-items:center; align-items:center; flex-direction:column; } 
-.headline{font-size:35px; font-family:'Times New Roman',Times,serif; margin-top:40px; width:750px; text-align:center; line-height:1.6; font-weight:lighter; } 
-.middle-line{font-size:18px; line-height:1.7; width:715px; text-align:center; margin-bottom:30px; font-family:Arial,Helvetica,sans-serif; } 
-.last-line{font-size:16px; font-style:italic; } 
-.last-line span{color:rgb(75,167,75); } 
-.content2{display:flex; justify-content:center; align-items:center; flex-direction:row; } 
-.rock-climbing{margin-top:130px; flex-direction:row; } 
-.rock-climbing img{width:500px; } 
-.rock-climbing-content{margin-left:50px; justify-content:center; align-items:center; text-align:center; } 
-.rock-climbing-content h3{font-size:18px; color:rgb(75,167,75); margin-top:190px; margin-bottom:20px; font-weight:bold; } 
-.rock-climbing-content p{width:550px; height:100px; font-size:25px; font-family:Arial,Helvetica,sans-serif; } 
-.rock-btn{margin-top:20px; width:180px; height:50px; border-radius:50px; border:none; color:white; font-weight:bold; font-size:16px; background-color:rgb(140,187,140); } 
-.content3{display:flex; justify-content:center; align-items:center; flex-direction:row; } 
-.off-road-content{margin-right:50px; justify-content:center; align-items:center; text-align:center; } 
-.off-road-content h3{font-size:18px; color:rgb(75,167,75); margin-top:190px; margin-bottom:20px; font-weight:bold; } 
-.off-road-content p{width:550px; height:100px; font-size:25px; font-family:Arial,Helvetica,sans-serif; } 
-.off-btn{margin-top:20px; width:180px; height:50px; border-radius:50px; border:none; color:white; font-weight:bold; font-size:16px; background-color:rgb(140,187,140); } 
-.off-road{margin-top:100px; flex-direction:row; } 
-.off-road img{width:500px; } 
-.content4{display:flex; justify-items:center; align-items:center; flex-direction:column; } 
-.content4 h1{margin-top:100px; font-size:40px; font-family:'Times New Roman',Times,serif; font-weight:100; margin-bottom:100px; } 
-.gallery-content{display:flex; justify-content:center; align-items:center; flex-direction:row; } 
-.image1 img{width:550px; } 
-.image2{display:flex; flex-direction:column; margin-left:15px; justify-content:space-around; } 
-.pic img{width:416px; height:410px; } 
-.pic .couple{margin-left:15px; } 
-.image2 .car{width:850px; height:405px; margin-bottom:15px; } 
-.contact{display:flex; flex-direction:row; margin-top:50px; align-items:center; } 
-.contact p{font-size:25px; font-family:Arial,Helvetica,sans-serif; font-weight:bold; } 
-.contact-btn{margin-left:250px; width:180px; height:50px; border-radius:50px; border:none; color:white; font-weight:bold; font-size:16px; background-color:rgb(140,187,140); } 
-.footer{display:flex; justify-content:center; align-items:center; flex-direction:column; margin-top:50px; height:225px; background-color:rgb(112,115,126); } 
-.footer .title{color:white; font-family:Arial,Helvetica,sans-serif; margin-bottom:20px; font-size:14px; font-weight:bold; } 
-.flatform a{display:inline-flex; justify-content:center; align-items:center; width:50px; height:50px; text-decoration:none; color:white; border:solid rgb(165,164,164) 1px; border-radius:50px; font-size:30px; letter-spacing:1px; font-weight:600; margin:0px 15px; } 
-.footer p{color:white; margin-top:20px; letter-spacing:1px; font-size:15px; font-family:Arial,Helvetica,sans-serif; } 
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
+.header { position: absolute; top: 0; left: 0; width: 100%; padding: 20px 10%; background: transparent; justify-content: space-around; align-items: center; display: flex; flex-wrap: wrap; }
+.logo { width: 125px; height: 75px; }
+.navbar a { font-size: 15px; text-decoration: none; font-weight: 500; color: rgb(0, 0, 0); margin-left: 35px; transition: color 0.3s ease; }
+.navbar a:hover { color: rgb(75, 167, 75); }
+.navbar .hm { font-weight: bold; }
+.navbar .btn { margin-left: 25px; width: 200px; height: 50px; background: transparent; border-radius: 50px; font-size: 18px; border: solid 1px; transition: all 0.3s ease; cursor: pointer; }
+.home { background: url(images/main.webp) no-repeat; background-position: 0% 20%; background-size: cover; display: flex; align-items: center; justify-content: center; height: 700px; }
+.home-content { justify-items: center; flex-direction: column; text-align: center; }
+.adventure { font-size: 30px; font-family: 'Times New Roman', Times, serif; font-weight: 100; font-style: italic; color: white; margin-bottom: 25px; }
+.line { font-size: 60px; color: white; margin-bottom: 35px; }
+.home-btn { display: flex; width: 200px; height: 50px; background: white; border-radius: 50px; font-size: 16px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; color: black; border: none; justify-content: center; align-items: center; cursor: pointer; transition: all 0.3s ease; }
+.content1 { display: flex; justify-items: center; align-items: center; flex-direction: column; }
+.headline { font-size: 35px; font-family: 'Times New Roman', Times, serif; margin-top: 40px; width: 750px; text-align: center; line-height: 1.6; font-weight: lighter; }
+.middle-line { font-size: 18px; line-height: 1.7; width: 715px; text-align: center; margin-bottom: 30px; font-family: Arial, Helvetica, sans-serif; }
+.last-line { font-size: 16px; font-style: italic; }
+.last-line span { color: rgb(75, 167, 75); }
+.content2 { display: flex; justify-content: center; align-items: center; flex-direction: row; flex-wrap: wrap; }
+.rock-climbing { margin-top: 130px; flex-direction: row; }
+.rock-climbing img { width: 500px; }
+.rock-climbing-content { margin: 0px 50px; justify-content: center; align-items: center; text-align: center; }
+.rock-climbing-content h3 { font-size: 18px; color: rgb(75, 167, 75); margin-top: 190px; margin-bottom: 20px; font-weight: bold; }
+.rock-climbing-content p { width: 550px; height: 100px; font-size: 25px; font-family: Arial, Helvetica, sans-serif; }
+.rock-btn { margin-top: 20px; width: 180px; height: 50px; border-radius: 50px; border: none; color: white; font-weight: bold; font-size: 16px; background-color: rgb(140, 187, 140); transition: all 0.3s ease; cursor: pointer; }
+.content3 { display: flex; justify-content: center; align-items: center; flex-direction: row; flex-wrap: wrap; }
+.off-road-content { margin: 0px 50px; justify-content: center; align-items: center; text-align: center; }
+.off-road-content h3 { font-size: 18px; color: rgb(75, 167, 75); margin-top: 190px; margin-bottom: 20px; font-weight: bold; }
+.off-road-content p { width: 550px; height: 100px; font-size: 25px; font-family: Arial, Helvetica, sans-serif; }
+.off-btn { margin-top: 20px; width: 180px; height: 50px; border-radius: 50px; border: none; color: white; font-weight: bold; font-size: 16px; background-color: rgb(140, 187, 140); transition: all 0.3s ease; cursor: pointer; }
+.off-road { margin-top: 100px; flex-direction: row; }
+.off-road img { width: 500px; }
+.content4 { display: flex; justify-items: center; align-items: center; flex-direction: column; flex-wrap: wrap; }
+.content4 h1 { margin-top: 100px; font-size: 40px; font-family: 'Times New Roman', Times, serif; font-weight: 100; margin-bottom: 100px; }
+.gallery-content { display: flex; justify-content: center; align-items: center; flex-direction: row; flex-wrap: wrap; }
+.image1 img { width: 550px; transition: transform 0.4s ease, box-shadow 0.4s ease; }
+.image1 img:hover { transform: scale(1.05); box-shadow: 0 8px 20px rgba(0,0,0,0.3); border-radius: 10px; }
+.image2 { display: flex; flex-direction: column; margin-left: 15px; justify-content: space-around; }
+.pic img { width: 416px; height: 410px; transition: transform 0.4s ease, box-shadow 0.4s ease; }
+.pic img:hover { transform: scale(1.05); box-shadow: 0 8px 20px rgba(0,0,0,0.3); border-radius: 10px; }
+.pic .couple { margin-left: 15px; }
+.image2 .car { width: 850px; height: 405px; margin-bottom: 15px; transition: transform 0.4s ease, box-shadow 0.4s ease; }
+.car:hover { transform: scale(1.05); box-shadow: 0 8px 20px rgba(0,0,0,0.3); border-radius: 10px; }
+.contact { display: flex; flex-direction: row; margin-top: 50px; align-items: center; }
+.contact p { font-size: 25px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; }
+.contact-btn { margin-left: 250px; width: 180px; height: 50px; border-radius: 50px; border: none; color: white; font-weight: bold; font-size: 16px; background-color: rgb(140, 187, 140); transition: all 0.3s ease; cursor: pointer; }
+.footer { display: flex; justify-content: center; align-items: center; flex-direction: column; margin-top: 50px; height: 225px; background-color: rgb(112, 115, 126); }
+.footer .title { color: white; font-family: Arial, Helvetica, sans-serif; margin-bottom: 20px; font-size: 14px; font-weight: bold; }
+.flatform a { display: inline-flex; justify-content: center; align-items: center; width: 50px; height: 50px; text-decoration: none; color: white; border: solid rgb(165, 164, 164) 1px; border-radius: 50px; font-size: 30px; letter-spacing: 1px; font-weight: 600; margin: 0px 15px; transition: all 0.3s ease; }
+.flatform a:hover { background-color: rgb(75, 167, 75); transform: scale(1.1); }
+.footer p { color: white; margin-top: 20px; letter-spacing: 1px; font-size: 15px; font-family: Arial, Helvetica, sans-serif; }
+.navbar .btn:hover, .home-btn:hover, .rock-btn:hover, .off-btn:hover, .contact-btn:hover { background-color: rgb(75, 167, 75); color: white; transform: scale(1.05); box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+
+/* Tablet */
+@media (max-width: 1024px) { .header { padding: 15px 5%; } .navbar a { margin-left: 15px; font-size: 14px; } .navbar .btn { width: 160px; height: 45px; font-size: 16px; } .home { height: 600px; background-position: center; } .line { font-size: 48px; } .adventure { font-size: 26px; } .headline { width: 90%; font-size: 28px; } .middle-line { width: 85%; font-size: 16px; } .last-line { font-size: 15px; } .rock-climbing img, .off-road img { width: 400px; } .rock-climbing-content p, .off-road-content p { width: 90%; font-size: 20px; } .image1 img { width: 90%; } .image2 .car { width: 100%; height: auto; } .pic img { width: 48%; height: auto; } }
+
+/* Mobile */
+@media (max-width: 768px) { .header { flex-direction: column; align-items: center; padding: 10px; } .logo { width: 100px; height: auto; margin-bottom: 10px; } .navbar { flex-wrap: wrap; justify-content: center; margin-top: 10px; } .navbar a { margin: 8px; font-size: 14px; } .navbar .btn { margin-top: 10px; width: 150px; height: 40px; font-size: 14px; } .home { height: 500px; text-align: center; padding: 0 15px; background-position: center; } .line { font-size: 36px; margin-bottom: 20px; } .adventure { font-size: 22px; margin-bottom: 15px; } .home-btn { width: 160px; height: 45px; font-size: 14px; } .content1 { padding: 20px; } .headline { width: 100%; font-size: 24px; line-height: 1.4; } .middle-line { width: 100%; font-size: 15px; line-height: 1.5; } .last-line { font-size: 14px; } .content2, .content3 { flex-direction: column; margin: 30px 0; } .rock-climbing img, .off-road img { width: 100%; height: auto; } .rock-climbing-content, .off-road-content { margin: 20px 0; } .rock-climbing-content h3, .off-road-content h3 { margin-top: 20px; } .gallery-content { flex-direction: column; } .image1 img, .image2 img, .pic img { width: 100%; height: auto; margin: 5px 0; } .contact { flex-direction: column; text-align: center; } .contact-btn { margin: 20px 0 0 0; } }
+
+/* Small Mobile */
+@media (max-width: 480px) { .line { font-size: 28px; } .adventure { font-size: 20px; } .headline { font-size: 20px; } .middle-line { font-size: 14px; } .last-line { font-size: 13px; } .home-btn, .rock-btn, .off-btn, .contact-btn { width: 150px; height: 45px; font-size: 14px; } .footer { text-align: center; padding: 20px; } .flatform a { margin: 5px; width: 40px; height: 40px; font-size: 24px; } }
